@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Orden de grid */
+
+#root {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        'header header'
+        'sidebar main'
+        'footer footer'
+    ;
+}
+
+
+
+/* Cabecera */
+
+header {
+    background-color: #0e2a5f;
+    color: aliceblue;
+    grid-area: header;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/* Barra lateral */
+
+aside {
+    background-color: #899aa1;
+    color: aliceblue;
+    grid-area: sidebar;
+    padding: 1rem;
+}
+
+aside h2 {
+    margin-bottom: 1rem;
+}
+
+aside p {
+    margin-bottom: 0.5rem;
+}
+
+
+.productos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #38343131;
+    color: rgb(0, 0, 0);
+    grid-area: main;
+    min-height: calc(100vh - 123px);
+}
+
+.productos .juego {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.productos .juego h3{
+    margin-bottom: 0.5rem;
+}
+
+.productos .juego h4{
+    margin-bottom: 0.5rem;
+}
+
+.productos .juego p { 
+    background-color: #0140B2;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.productos .juego img {
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    object-fit: fill;
+}
+
+.productos .juego .detalle {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+footer {
+    
+    background-color: #0140B2;
+    color: aliceblue;
+    grid-area: footer;
+    padding: 1rem;
+    text-align: center;
+}
