@@ -33,25 +33,40 @@ header {
 /* Barra lateral */
 
 aside {
-    background-color: #899aa1;
+    background-color: #727272;
     color: aliceblue;
     grid-area: sidebar;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 aside h2 {
     margin-bottom: 1rem;
 }
 
-aside p {
-    margin-bottom: 0.5rem;
+.lateral {
+    display: flex;
+    flex-direction: column;
+
 }
 
+.lateral .categorias {
+    display: flex;
+    margin: 0  0 0.5rem 2rem;
+}
+
+.lateral .categorias p {
+    margin-left: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* Grilla de juegos */
 
 .productos {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #38343131;
+    background-color: #727272;
     color: rgb(0, 0, 0);
     grid-area: main;
     min-height: calc(100vh - 123px);
@@ -63,7 +78,7 @@ aside p {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem;
+    margin: 1rem;
 }
 
 .productos .juego h3{
@@ -75,16 +90,16 @@ aside p {
 }
 
 .productos .juego p { 
-    background-color: #0140B2;
+    background-color: #0e2a5f;
     color: #fff;
     padding: 0.5rem;
 }
 
 .productos .juego img {
     width: 300px;
-    height: 300px;
+    height:400px;
     margin: 1rem;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .productos .juego .detalle {
@@ -94,9 +109,11 @@ aside p {
 
 
 
+/* Pie */
+
 footer {
     
-    background-color: #0140B2;
+    background-color: #0e2a5f;
     color: aliceblue;
     grid-area: footer;
     padding: 1rem;
